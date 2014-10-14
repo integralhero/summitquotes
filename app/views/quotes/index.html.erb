@@ -1,27 +1,14 @@
-<h1>Listing quotes</h1>
+<div class="newquote pull-right"><%= link_to 'New Quote', new_quote_path %></div><BR>
+<div id="topPart"><h1 class="title">ASES Summit Quotes </h1> <h3><center><small>key moments in summit history</small></h3></center></div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Body</th>
-      <th>Author</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
     <% @quotes.each do |quote| %>
-      <tr>
-        <td><%= quote.body %></td>
-        <td><%= quote.author %></td>
-        <td><%= link_to 'Show', quote %></td>
-        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <div class="quote">
+          <div class="quotetext"> <%= quote.body %></div>
+          <div class="delete center"><%= link_to 'delete', quote, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+          <small class="pull-right">-<%= quote.author %> </small>
+        </div>
+
     <% end %>
-  </tbody>
-</table>
 
-<br>
 
-<%= link_to 'New Quote', new_quote_path %>

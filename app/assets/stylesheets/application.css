@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+ .center {
+ 	text-align: center;
+ }
+ .quotetext {
+
+ 	opacity: 0.4;
+ }
+ .quotetext:hover {
+ 	transition: 0.7s all ease-in-out;
+ 	-moz-transition: 0.7s all ease-in-out;
+ 	-webkit-transition: 0.7s all ease-in-out;
+ 	opacity: 1.0;
+ }
+
+.delete:hover {
+	transition: 0.3s all ease-in-out;
+	-moz-transition: 0.3s all ease-in-out;
+	-webkit-transition: 0.3s all ease-in-out;
+	opacity: 0.8;
+
+}
+ .delete {
+ 	color: red !important;
+ 	font-size: 0.6em;
+ 	opacity: 0;
+ }
+h1.title {
+	text-align: center;
+	font-size: 4em;
+
+}
+#topPart {
+	margin-bottom: 5em;
+}
+.quote {
+	padding: 2em;
+	margin-top: 4em;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+.newquote {
+	position: fixsed;
+	top: 1em;
+	right: 1em;
+}

@@ -2,5 +2,6 @@
 
 <%= render 'form' %>
 
+<%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
 <%= link_to 'Show', @quote %> |
 <%= link_to 'Back', quotes_path %>
